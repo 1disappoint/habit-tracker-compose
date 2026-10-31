@@ -18,8 +18,11 @@ docker compose logs api
 ```
 ### Примеры CRUD-запросов (curl)
 Создать привычку (POST): curl -X POST http://localhost:8080/habits -H "Content-Type: application/json" -d "{\"name\":\"Текст\"}"
+
 Получить список (GET): curl http://localhost:8080/habit
+
 Обновить привычку (PUT): curl -X PUT http://localhost:8080/habits/1 -H "Content-Type: application/json" -d "{\"name\":\"Читать 10 страниц\"}"
+
 Удалить привычку (DELETE): curl -X DELETE http://localhost:8080/habits/1
 
 ### Проверка сохранения данных
